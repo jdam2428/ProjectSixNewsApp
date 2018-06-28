@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/news_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/primaryText"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="Title of news article will go here" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/news_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:textAllCaps="true"
+        android:textColor="@color/primaryText"
+        android:textSize="12sp"
+        tools:text="Firstname Lastname" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/news_type"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/secondaryText"
+            android:textSize="15sp"
+            tools:text="News category" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:textAlignment="textEnd"
+            android:textColor="@color/secondaryText"
+            android:textSize="15sp"
+            tools:text="Jun 25, 2018" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center"
+            android:textColor="@color/secondaryText"
+            android:textSize="15sp"
+            tools:text="3:00 PM" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_main_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dividerColor" />
+
+</LinearLayout>

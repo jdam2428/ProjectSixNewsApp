@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">World Cup 2018 News</string>
+    <string name="no_connection">"No internet connection found.\n\nPlease refresh your internet settings and try again."</string>
+    <string name="no_news_found">"No news articles available. Please check your settings and try again."</string>
+</resources>
