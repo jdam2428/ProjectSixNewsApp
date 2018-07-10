@@ -175,6 +175,11 @@ public final class QueryUtils {
 
                 //Extract the value of the key called fields
                 String authorFullName = currentNews.getJSONObject("fields").getString("byline");
+                if (currentNews.has("fields")) {
+                    if (currentNews.getJSONObject("fields").has("byline")) {
+                        authorFullName = currentNews.getJSONObject("fields").getString("byline");
+                    }
+                }
 
                 // Extract the value for the key called "webPublicationDate"
                 String originalPublicationDate = currentNews.getString("webPublicationDate");
