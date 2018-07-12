@@ -31,4 +31,7 @@
     <string name="settings_sport_label">sport</string>
     <string name="settings_sport_value" translatable="false">sport</string>
 
+
+    <string name="http_request_error">Problem making the HTTP request.</string>
+
 </resources>

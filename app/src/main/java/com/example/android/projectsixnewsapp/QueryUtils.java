@@ -174,7 +174,7 @@ public final class QueryUtils {
                 String sectionName = currentNews.getString("sectionName");
 
                 //Extract the value of the key called fields
-                String authorFullName = currentNews.getJSONObject("fields").getString("byline");
+                String authorFullName = "";
                 if (currentNews.has("fields")) {
                     if (currentNews.getJSONObject("fields").has("byline")) {
                         authorFullName = currentNews.getJSONObject("fields").getString("byline");
